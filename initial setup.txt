@@ -1,0 +1,16 @@
+14th October 
+
+
+Learning spaCy for NLP project with automation 
+
+setup of installation of spaCy 
+
+1. Install python 3.6
+2. install anaconda 
+3. through anaconda prompt install spacy package 
+(Step 3 is the best way to install spaCy without any errors)
+
+
+
+15th October 
+
