@@ -11,9 +11,20 @@ false_values = ['Lender','Blvd','Borrowers','Borrower','Del Rio S','S. Sepulveda
 
 
 # doc.ents = [Span(doc, 43, 76, label="PERSON")]
-for entity in doc.ents:
-        if(entity.label_ == "PERSON") & (entity.text not in false_values):
-                print(entity.text,entity.start_char,entity.end_char)
+# for entity in doc.ents:
+#         if(entity.label_ == "PERSON") & (entity.text not in false_values):
+#                 print(entity.text,entity.start_char,entity.end_char)
+
+
+# count = 0 
+# for chunk in doc.noun_chunks:
+#         if(chunk.text == "(B) Borrower"):
+#                count+=1
+#                print(count)
+#                print(chunk)
+
+# for chunk in doc.noun_chunks:
+#         print(chunk.text)
 
 
 file1.close()

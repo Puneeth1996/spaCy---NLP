@@ -4,10 +4,10 @@
 import spacy
 
 # Load English tokenizer, tagger, parser, NER and word vectors
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_lg")
 
 # Process whole documents
-file1 = open("sample_output.txt","r")
+file1 = open("out.txt","r")
 text = file1.read()
 # print(text)
 doc = nlp(text)
@@ -26,8 +26,7 @@ doc = nlp(text)
 print('Names:')
 # lets try printing on the names in from the samples text files
 for entity in doc.ents:
-        if(entity.label_ == "PERSON"):
-                print(entity.text)
+        print(entity.text,entity.label_)
 
 
 file1.close()
